@@ -22,8 +22,5 @@ test:
 
 production:
   adapter:  postgresql
-  encoding: unicode
   pool:     <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: hello_app
-  password: asdfgh
   database: hello_app
